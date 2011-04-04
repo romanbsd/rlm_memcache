@@ -1,0 +1,6 @@
+NAS-IP-Address = 10.1.1.1
+Framed-IP-Address =  10.1.1.2
+Called-Station-Id = internetg
+Calling-Station-Id = +972522222222
+Acct-Status-Type = START
+Acct-Session-Id = 666

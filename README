@@ -1,0 +1,27 @@
+rlm_memcache
+============
+
+Provides means of puting the accounting records directly into cache.
+The key can be one of the fields.
+
+
+Requirements:
+------------
+
+1. FreeRADIUS >= 2.1.0
+2. libmemcached >= 0.30
+
+
+Usage:
+------
+
+Add to configuration:
+
+memcache {
+	# List of memcached servers
+	servers s1.example.com s2.example.com
+
+	# The attribute to be used as a memcached key
+	# (other keys will be stored as a JSON hash)
+	key X-IP-Addr
+}
